@@ -27,4 +27,24 @@ assert 10 '-10+20'
 assert 30 '- -30'
 assert 10 '-3*-5+-5'
 
+assert 0 '8==9'
+assert 1 '10==10'
+
+assert 1 '8!=9'
+assert 0 '10!=10'
+
+assert 1 '2 < 3';
+assert 0 '3 < 2';
+
+assert 0 '2 > 3';
+assert 1 '3 > 2';
+
+assert 1 '2 <= 2'
+assert 1 '2 <= 3'
+assert 0 '3 <= 2'
+
+assert 1 '2 >= 2'
+assert 0 '2 >= 3'
+assert 1 '3 >= 2'
+
 echo OK
